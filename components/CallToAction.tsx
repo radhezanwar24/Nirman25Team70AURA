@@ -14,7 +14,7 @@ export default function CallToAction() {
             Sign Up Now
           </Link>
           <Link
-            href="/explore"
+            href="/search"
             className="bg-transparent border-2 border-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-[#B10DC9] transition duration-300"
           >
             Explore Skills

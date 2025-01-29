@@ -23,7 +23,7 @@ export default function Hero() {
               variant="outline"
               className="border-2 border-white text-white hover:bg-white hover:text-primary"
             >
-              <Link href="/explore" className="bg-transparent border-2 border-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-[#B10DC9] transition duration-300"> Explore Skills </Link>
+              <Link href="/search" className="bg-transparent border-2 border-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-white hover:text-[#B10DC9] transition duration-300"> Explore Skills </Link>
             </Button>
           </div>
         </div>

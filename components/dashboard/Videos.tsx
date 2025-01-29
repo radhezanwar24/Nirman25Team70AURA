@@ -27,7 +27,7 @@ export default function Videos() {
       duration: "15:30",
       views: 1200,
       likes: 245,
-      instructor: "John Smith",
+      instructor: "Radhe",
       category: "Web Development",
       isLiked: false
     },
@@ -38,7 +38,7 @@ export default function Videos() {
       duration: "23:45",
       views: 850,
       likes: 190,
-      instructor: "Emily Brown",
+      instructor: "Samarth",
       category: "React",
       isLiked: true
     },
@@ -49,7 +49,7 @@ export default function Videos() {
       duration: "18:20",
       views: 950,
       likes: 210,
-      instructor: "David Wilson",
+      instructor: "Md. Amaan Oruj",
       category: "Design",
       isLiked: false
     }

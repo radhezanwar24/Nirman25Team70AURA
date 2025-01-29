@@ -1,8 +1,22 @@
+"use client"
+
 import { Search } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 export default function Header() {
+  const [searchQuery, setSearchQuery] = useState("")
+  const router = useRouter()
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (searchQuery.trim()) {
+      router.push(`/search?q=${encodeURIComponent(searchQuery.trim())}`)
+    }
+  }
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
       <div className="container mx-auto">
@@ -27,14 +41,16 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <div className="relative hidden md:block">
+            <form onSubmit={handleSearch} className="relative hidden md:block">
               <input
                 type="search"
                 placeholder="What do you want to learn?"
                 className="h-9 w-[250px] rounded-full border border-gray-200 bg-white px-4 pl-9 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
               <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
-            </div>
+            </form>
 
             <Button asChild variant="default" size="sm">
               <Link href="/signup">Sign Up</Link>
@@ -49,4 +65,3 @@ export default function Header() {
     </header>
   )
 }
-
