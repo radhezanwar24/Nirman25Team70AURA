@@ -3,8 +3,13 @@
 import { useState, useEffect } from "react"
 import { ArrowRight, Star, ChevronLeft, ChevronRight, Award, Briefcase, TrendingUp } from "lucide-react"
 import Image from "next/image"
+<<<<<<< HEAD
 import FutureScopeAnalysis from "./FutureScopeAnalysis"
 import JobAnalytics from './JobAnalytics';
+=======
+import JobRecommendations from "./JobRecommendations"
+import FutureScopeAnalysis from "./FutureScopeAnalysis"
+>>>>>>> a407ccdf65ad6438b6c83dc3b5136e8bca3b2ff1
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -231,9 +236,18 @@ export default function MainContent() {
         </div>
       </section>
 
+<<<<<<< HEAD
       {/* ML-powered Job Analytics */}
       <JobAnalytics />
       
+=======
+      {/* Job Recommendations Section */}
+      <section className="mb-8">
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">Job Recommendations</h2>
+        <JobRecommendations skills={userSkills} interests={userInterests} />
+      </section>
+
+>>>>>>> a407ccdf65ad6438b6c83dc3b5136e8bca3b2ff1
       {/* Future Scope Analysis Section */}
       <section className="mb-8">
         <h2 className="text-2xl font-semibold text-gray-900 mb-4">Future Scope Analysis</h2>
