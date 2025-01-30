@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import Header from "@/components/Header";
@@ -53,6 +54,16 @@ export default function Home() {
     }
   };
 
+=======
+import Header from "@/components/Header"
+import Hero from "@/components/Hero"
+import FeaturePreview from "@/components/FeaturePreview"
+import Testimonials from "@/components/Testimonials"
+import CallToAction from "@/components/CallToAction"
+import Footer from "@/components/Footer"
+
+export default function Home() {
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
   return (
     <>
       <Header />
@@ -61,6 +72,7 @@ export default function Home() {
         <FeaturePreview />
         <Testimonials />
         <CallToAction />
+<<<<<<< HEAD
 
         {/* Chatbot */}
         <div className="fixed bottom-4 right-4">
@@ -136,3 +148,11 @@ export default function Home() {
     </>
   );
 }
+=======
+      </main>
+      <Footer />
+    </>
+  )
+}
+
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435

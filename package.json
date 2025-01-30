@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@google/generative-ai": "^0.21.0",
+=======
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",

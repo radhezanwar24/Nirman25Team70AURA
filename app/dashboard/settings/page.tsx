@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 
 import { useState, useEffect } from "react"
@@ -187,3 +188,14 @@ export default function SettingsPage() {
     </div>
   )
 }
+=======
+export default function Settings() {
+  return (
+    <div>
+      <h1 className="text-3xl font-semibold text-gray-900 mb-6">Settings</h1>
+      {/* Add settings content here */}
+    </div>
+  )
+}
+
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435

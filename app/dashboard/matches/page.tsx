@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client"
 
 import { useState } from "react"
@@ -260,3 +261,14 @@ export default function Matches() {
     </div>
   )
 }
+=======
+export default function Matches() {
+  return (
+    <div>
+      <h1 className="text-3xl font-semibold text-gray-900 mb-6">Your Matches</h1>
+      {/* Add matches content here */}
+    </div>
+  )
+}
+
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435

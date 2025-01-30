@@ -1,10 +1,17 @@
 "use client"
 
 import { useState } from "react"
+<<<<<<< HEAD
 import { Search, Filter, Star, Clock, Users, ChevronRight } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+=======
+import { Search, Filter } from "lucide-react"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
 
 type SearchResult = {
   id: string
@@ -12,6 +19,7 @@ type SearchResult = {
   type: "skill" | "course" | "user"
   description: string
   tags: string[]
+<<<<<<< HEAD
   thumbnail: string
   rating: number
   students: number
@@ -20,6 +28,9 @@ type SearchResult = {
   level: "Beginner" | "Intermediate" | "Advanced"
   gradient: string
   lastUpdated: string
+=======
+  thumbnail?: string
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
 }
 
 export default function PublicSearch() {
@@ -29,6 +40,7 @@ export default function PublicSearch() {
       id: "1",
       title: "Web Development Fundamentals",
       type: "course",
+<<<<<<< HEAD
       description: "Master modern web development with hands-on projects. Learn HTML, CSS, JavaScript, and React through practical examples.",
       tags: ["React", "JavaScript", "HTML/CSS"],
       thumbnail: "/thumbnails/web-dev.jpg",
@@ -69,6 +81,27 @@ export default function PublicSearch() {
       level: "Advanced",
       gradient: "from-[#10B981] to-[#3B82F6]",
       lastUpdated: "Jan 20, 2025"
+=======
+      description: "Learn the basics of web development with HTML, CSS, and JavaScript",
+      tags: ["web development", "beginner", "coding"],
+      thumbnail: "/thumbnails/web-dev.jpg"
+    },
+    {
+      id: "2",
+      title: "UI/UX Design",
+      type: "skill",
+      description: "Essential skill for creating user-friendly interfaces",
+      tags: ["design", "ui", "ux"],
+      thumbnail: "/thumbnails/uiux.jpg"
+    },
+    {
+      id: "3",
+      title: "Python Programming",
+      type: "course",
+      description: "Master Python programming from scratch",
+      tags: ["python", "programming", "beginner"],
+      thumbnail: "/thumbnails/python.jpg"
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
     }
   ])
 
@@ -79,6 +112,7 @@ export default function PublicSearch() {
   }
 
   return (
+<<<<<<< HEAD
     <div className="max-w-7xl mx-auto p-6 space-y-8">
       {/* Header */}
       <div className="text-center mb-12">
@@ -106,10 +140,26 @@ export default function PublicSearch() {
           className="h-12 px-6 rounded-2xl border-gray-200 hover:border-primary hover:text-primary transition-colors"
         >
           <Filter className="w-5 h-5 mr-2" />
+=======
+    <div className="max-w-4xl mx-auto p-4 space-y-6">
+      <form onSubmit={handleSearch} className="flex gap-4">
+        <div className="relative flex-1">
+          <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground w-4 h-4" />
+          <Input
+            placeholder="Search for skills, courses, or users..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="pl-10"
+          />
+        </div>
+        <Button variant="outline">
+          <Filter className="w-4 h-4 mr-2" />
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
           Filters
         </Button>
       </form>
 
+<<<<<<< HEAD
       {/* Results Grid */}
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {results.map((result) => (
@@ -198,6 +248,42 @@ export default function PublicSearch() {
               </div>
             </div>
           </div>
+=======
+      <div className="grid gap-6 md:grid-cols-2">
+        {results.map((result) => (
+          <Card key={result.id}>
+            {result.thumbnail && (
+              <div className="relative aspect-video">
+                <img
+                  src={result.thumbnail}
+                  alt={result.title}
+                  className="object-cover w-full h-full rounded-t-lg"
+                />
+              </div>
+            )}
+            <CardHeader>
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-medium px-2 py-1 rounded-full bg-primary/10 text-primary">
+                  {result.type}
+                </span>
+              </div>
+              <CardTitle>{result.title}</CardTitle>
+              <CardDescription>{result.description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-wrap gap-2">
+                {result.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs px-2 py-1 rounded-full bg-secondary"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
         ))}
       </div>
     </div>

@@ -8,6 +8,7 @@ export default function ClientLayout({
 }: {
   children: React.ReactNode
 }) {
+<<<<<<< HEAD
   const isMessagePage = window.location.pathname.includes("/messenger/newMessagePage");
   
   return (
@@ -22,4 +23,12 @@ export default function ClientLayout({
       )}
     </>
   );
+=======
+  return (
+    <AuthProvider>
+      {children}
+      <AccessibilitySettings />
+    </AuthProvider>
+  )
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
 }

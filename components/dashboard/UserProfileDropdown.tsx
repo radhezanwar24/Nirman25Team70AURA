@@ -44,6 +44,15 @@ export default function UserProfileDropdown({ userName, userAvatar }: UserProfil
           <Link href="/dashboard/settings" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
             Settings
           </Link>
+<<<<<<< HEAD
+=======
+
+          <div className="border-t border-gray-200">
+            <button className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+              Sign out
+            </button>
+          </div>
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
         </div>
       )}
     </div>
