@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
 "use client"
 
 import { useState, useEffect } from "react"
@@ -30,7 +34,11 @@ export default function SettingsPage() {
   // Redirect if not authenticated
   useEffect(() => {
     if (status === "unauthenticated") {
+<<<<<<< HEAD
       redirect("/auth/signin")
+=======
+      redirect("/settings/page")
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
     }
   }, [status])
 
@@ -187,3 +195,17 @@ export default function SettingsPage() {
     </div>
   )
 }
+<<<<<<< HEAD
+=======
+=======
+export default function Settings() {
+  return (
+    <div>
+      <h1 className="text-3xl font-semibold text-gray-900 mb-6">Settings</h1>
+      {/* Add settings content here */}
+    </div>
+  )
+}
+
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366

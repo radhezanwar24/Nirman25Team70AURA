@@ -9,7 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@google/generative-ai": "^0.21.0",
+=======
+<<<<<<< HEAD
+    "@google/generative-ai": "^0.21.0",
+=======
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
     "@hookform/resolvers": "^3.9.1",
     "@radix-ui/react-accordion": "^1.2.2",
     "@radix-ui/react-alert-dialog": "^1.1.4",
@@ -39,8 +46,13 @@
     "@radix-ui/react-toggle-group": "^1.1.1",
     "@radix-ui/react-tooltip": "^1.1.6",
     "autoprefixer": "^10.4.20",
+<<<<<<< HEAD
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",
+=======
+    "axios": "latest",
+    "chart.js": "latest",
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "1.0.4",
@@ -52,7 +64,11 @@
     "next-themes": "^0.4.4",
     "playwright": "^1.50.0",
     "react": "^18",
+<<<<<<< HEAD
     "react-chartjs-2": "^5.3.0",
+=======
+    "react-chartjs-2": "latest",
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
     "react-day-picker": "8.10.1",
     "react-dom": "^18",
     "react-hook-form": "^7.54.1",

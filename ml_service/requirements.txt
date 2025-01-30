@@ -1,2 +1,15 @@
 requests==2.31.0
 beautifulsoup4==4.12.2
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+pandas==2.1.3
+spacy==3.7.2
+scikit-learn==1.3.2
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+aiofiles==23.2.1
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366

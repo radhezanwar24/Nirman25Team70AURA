@@ -6,6 +6,10 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { useAuth } from "@/context/auth-context"
+<<<<<<< HEAD
+=======
+import Link from "next/link"
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
 
 type Message = {
   id: string

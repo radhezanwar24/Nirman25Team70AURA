@@ -1,11 +1,9 @@
-"use client"
-
-import { useState } from "react"
-import { Send, Paperclip, Smile, Video } from "lucide-react"
-import Image from "next/image"
-import TopNavBar from "@/components/dashboard/TopNavBar"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
+import { useState } from "react";
+import { Send, Paperclip, Smile, Video } from "lucide-react";
+import Image from "next/image";
+import TopNavBar from "@/components/dashboard/TopNavBar";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 
 const recentChats = [
   {
@@ -49,160 +47,35 @@ const recentChats = [
   {
     id: 2,
     name: "Bob Smith",
-    lastMessage: "Thanks for the great lesson yesterday!",
+    lastMessage: "Thanks for the help yesterday!",
     avatar: "/placeholder.svg?height=50&width=50",
     messages: [
       {
         id: 1,
         sender: "Bob",
-        content: "Hey, I just wanted to say thanks for yesterday's guitar lesson. It was really helpful!",
+        content: "Thanks for the help yesterday!",
         timestamp: "9:00 AM",
       },
       {
         id: 2,
         sender: "You",
-        content: "I'm glad you found it helpful, Bob! How's your progress with the new chords we learned?",
-        timestamp: "9:15 AM",
-      },
-      {
-        id: 3,
-        sender: "Bob",
-        content: "I've been practicing, and I think I'm getting better. The F chord is still a bit tricky though.",
-        timestamp: "9:20 AM",
-      },
-      {
-        id: 4,
-        sender: "You",
-        content:
-          "The F chord can be challenging at first. Keep practicing, and we'll work on it more in our next lesson.",
-        timestamp: "9:25 AM",
-      },
-      { id: 5, sender: "Bob", content: "Sounds good! Looking forward to our next session.", timestamp: "9:30 AM" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Charlie Brown",
-    lastMessage: "Can we reschedule our meeting?",
-    avatar: "/placeholder.svg?height=50&width=50",
-    messages: [
-      {
-        id: 1,
-        sender: "Charlie",
-        content: "Hi there! Something came up at work. Is it possible to reschedule our graphic design session?",
-        timestamp: "2:00 PM",
-      },
-      {
-        id: 2,
-        sender: "You",
-        content: "Of course, Charlie. No problem at all. When would be a better time for you?",
-        timestamp: "2:10 PM",
-      },
-      { id: 3, sender: "Charlie", content: "Would next Monday at the same time work for you?", timestamp: "2:15 PM" },
-      {
-        id: 4,
-        sender: "You",
-        content: "Monday works perfectly. Shall we keep the focus on Adobe Illustrator basics?",
-        timestamp: "2:20 PM",
-      },
-      {
-        id: 5,
-        sender: "Charlie",
-        content: "Yes, please. And if we have time, could we touch on logo design principles?",
-        timestamp: "2:25 PM",
-      },
-      { id: 6, sender: "You", content: "We'll cover that too. See you on Monday!", timestamp: "2:30 PM" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Diana Prince",
-    lastMessage: "I have a question about the last topic we covered.",
-    avatar: "/placeholder.svg?height=50&width=50",
-    messages: [
-      {
-        id: 1,
-        sender: "Diana",
-        content:
-          "Hello! I hope I'm not bothering you, but I have a question about the marketing strategies we discussed last time.",
-        timestamp: "11:00 AM",
-      },
-      {
-        id: 2,
-        sender: "You",
-        content: "You're not bothering me at all, Diana. What's your question?",
-        timestamp: "11:05 AM",
-      },
-      {
-        id: 3,
-        sender: "Diana",
-        content: "We talked about content marketing, but I'm not sure how to measure its effectiveness. Any tips?",
-        timestamp: "11:10 AM",
-      },
-      {
-        id: 4,
-        sender: "You",
-        content:
-          "Great question! Some key metrics to look at are engagement rates, time spent on page, and conversion rates. We can dive deeper into this in our next session if you'd like.",
-        timestamp: "11:20 AM",
-      },
-      {
-        id: 5,
-        sender: "Diana",
-        content: "That would be really helpful. Thanks! Looking forward to our next session.",
-        timestamp: "11:25 AM",
+        content: "No problem! Let me know if you have any more questions.",
+        timestamp: "9:05 AM",
       },
     ],
   },
-  {
-    id: 5,
-    name: "Ethan Hunt",
-    lastMessage: "Looking forward to our next skill swap!",
-    avatar: "/placeholder.svg?height=50&width=50",
-    messages: [
-      {
-        id: 1,
-        sender: "Ethan",
-        content:
-          "Hey there! I'm excited about our upcoming skill swap. Ready to trade some photography tips for cooking lessons?",
-        timestamp: "3:00 PM",
-      },
-      {
-        id: 2,
-        sender: "You",
-        content:
-          "Absolutely, Ethan! I can't wait to learn more about photography. Any specific dish you want to start with for the cooking lesson?",
-        timestamp: "3:10 PM",
-      },
-      {
-        id: 3,
-        sender: "Ethan",
-        content:
-          "How about we start with a classic Italian pasta dish? And for photography, I was thinking we could cover composition techniques.",
-        timestamp: "3:15 PM",
-      },
-      {
-        id: 4,
-        sender: "You",
-        content:
-          "Sounds perfect! I'll prepare some materials on pasta-making. Looking forward to learning about composition!",
-        timestamp: "3:20 PM",
-      },
-      { id: 5, sender: "Ethan", content: "Great! This is going to be fun. See you soon!", timestamp: "3:25 PM" },
-    ],
-  },
-]
+];
 
-export default function Messenger() {
-  const [selectedChat, setSelectedChat] = useState(recentChats[0])
-  const [message, setMessage] = useState("")
+export default function NewMessagePage() {
+  const [selectedChat, setSelectedChat] = useState(recentChats[0]);
+  const [message, setMessage] = useState("");
 
   const handleSendMessage = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Implement send message logic here
-    console.log("Sending message:", message)
-    setMessage("")
-  }
+    console.log("Sending message:", message);
+    setMessage("");
+  };
 
   return (
     <div className="min-h-screen bg-gray-100">
@@ -298,9 +171,5 @@ export default function Messenger() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366

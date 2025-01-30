@@ -27,7 +27,15 @@ export default function Videos() {
       duration: "15:30",
       views: 1200,
       likes: 245,
+<<<<<<< HEAD
       instructor: "John Smith",
+=======
+<<<<<<< HEAD
+      instructor: "John Smith",
+=======
+      instructor: "Radhe",
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
       category: "Web Development",
       isLiked: false
     },
@@ -38,7 +46,15 @@ export default function Videos() {
       duration: "23:45",
       views: 850,
       likes: 190,
+<<<<<<< HEAD
       instructor: "Emily Brown",
+=======
+<<<<<<< HEAD
+      instructor: "Emily Brown",
+=======
+      instructor: "Samarth",
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
       category: "React",
       isLiked: true
     },
@@ -49,7 +65,15 @@ export default function Videos() {
       duration: "18:20",
       views: 950,
       likes: 210,
+<<<<<<< HEAD
       instructor: "David Wilson",
+=======
+<<<<<<< HEAD
+      instructor: "David Wilson",
+=======
+      instructor: "Md. Amaan Oruj",
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
       category: "Design",
       isLiked: false
     }

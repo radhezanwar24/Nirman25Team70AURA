@@ -22,9 +22,24 @@ export function middleware(request: NextRequest) {
     request.nextUrl.pathname.startsWith(path)
   )
 
+<<<<<<< HEAD
   // If it's a public path, allow access
   if (isPublicPath) {
     return NextResponse.next()
+=======
+<<<<<<< HEAD
+  // Check if the current path is the new message page
+  const isMessagePage = request.nextUrl.pathname === "/messenger/new-message-page";
+
+  // If it's a public path or the message page, allow access
+  if (isPublicPath || isMessagePage) {
+    return NextResponse.next();
+=======
+  // If it's a public path, allow access
+  if (isPublicPath) {
+    return NextResponse.next()
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
   }
 
   // Check if the current path requires authentication

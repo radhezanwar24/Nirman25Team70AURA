@@ -24,7 +24,25 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+<<<<<<< HEAD
 next-env.d.ts
 
 # API keys and sensitive data
 ml_service/config.py
+=======
+<<<<<<< HEAD
+next-env.d.ts
+
+# API keys and sensitive data
+ml_service/config.py
+=======
+<<<<<<< HEAD
+next-env.d.ts
+
+# API keys and sensitive data
+ml_service/config.py
+=======
+next-env.d.ts
+>>>>>>> a407ccdf65ad6438b6c83dc3b5136e8bca3b2ff1
+>>>>>>> 1b14ea9998ea7722dd0f5ac506b49d382ad11435
+>>>>>>> 0bad6bd6b6cdcb5906b6966559d8e5deda0ed366
